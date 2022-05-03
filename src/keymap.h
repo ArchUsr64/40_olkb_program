@@ -1,3 +1,5 @@
+#pragma once
+
 #define KEYMAP_ARRAY                                                           \
   {                                                                            \
     {TAB, Q, W, E, R, T, Y, U, I, O, P, QUOTATION_MARK},                       \
