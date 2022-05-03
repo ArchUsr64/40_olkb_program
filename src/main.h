@@ -1,5 +1,8 @@
 #pragma once
 
+#include "Keyboard.h"
+#include "Mouse.h"
+
 #include "key_config.h"
 #include "keymap.h"
 
