@@ -97,3 +97,19 @@
             NA,                                                                \
         },                                                                     \
   }
+
+#define WRITING_KEY_ARRAY                                                      \
+  {                                                                            \
+    {                                                                          \
+        NA, 'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', '\'',            \
+    },                                                                         \
+        {                                                                      \
+            NA, 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', ';', NA,          \
+        },                                                                     \
+        {                                                                      \
+            NA, 'z', 'x', 'c', 'v', 'b', 'n', 'm', ',', '.', '/', NA,          \
+        },                                                                     \
+        {                                                                      \
+            NA, NA, NA, NA, NA, NA, NA, ' ', NA, NA, NA, NA,                   \
+        },                                                                     \
+  }
