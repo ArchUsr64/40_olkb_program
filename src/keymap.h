@@ -1,11 +1,99 @@
 #pragma once
 
-#define KEYMAP_ARRAY                                                           \
+#define NA '_'
+
+#define KEY_TYPE_ARRAY                                                         \
   {                                                                            \
-    {TAB, Q, W, E, R, T, Y, U, I, O, P, QUOTATION_MARK},                       \
-        {CTRL_L, A, S, D, F, G, H, J, K, L, SEMI_COLON, CTRL_R},               \
-        {SHIFT_L, Z, X, C, V, B, N, M, COMMA, PERIOD, BACKSPACE, SHIFT_R}, {   \
-      MOUSE_LEFT, MOUSE_DOWN, MOUSE_UP, MOUSE_RIGHT, BACKSPACE, ENTER, SPACE,  \
-          BACKSPACE, MOUSE_1, MOUSE_2, ALT_L, ESC                              \
-    }                                                                          \
+    {                                                                          \
+        SPECIAL_KEY, WRITING_KEY, WRITING_KEY, WRITING_KEY,                    \
+        WRITING_KEY, WRITING_KEY, WRITING_KEY, WRITING_KEY,                    \
+        WRITING_KEY, WRITING_KEY, WRITING_KEY, WRITING_KEY,                    \
+    },                                                                         \
+        {                                                                      \
+            MODIFIER_KEY, WRITING_KEY, WRITING_KEY, WRITING_KEY,               \
+            WRITING_KEY,  WRITING_KEY, WRITING_KEY, WRITING_KEY,               \
+            WRITING_KEY,  WRITING_KEY, WRITING_KEY, MODIFIER_KEY,              \
+        },                                                                     \
+        {                                                                      \
+            MODIFIER_KEY, WRITING_KEY, WRITING_KEY, WRITING_KEY,               \
+            WRITING_KEY,  WRITING_KEY, WRITING_KEY, WRITING_KEY,               \
+            WRITING_KEY,  WRITING_KEY, WRITING_KEY, MODIFIER_KEY,              \
+        },                                                                     \
+        {                                                                      \
+            MOUSE_KEY,   MOUSE_KEY,   MOUSE_KEY,    MOUSE_KEY,                 \
+            SPECIAL_KEY, SPECIAL_KEY, WRITING_KEY,  SPECIAL_KEY,               \
+            MOUSE_KEY,   MOUSE_KEY,   MODIFIER_KEY, SPECIAL_KEY,               \
+        },                                                                     \
+  }
+
+#define MODIFIER_KEY_ARRAY                                                     \
+  {                                                                            \
+    {                                                                          \
+        NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,                        \
+    },                                                                         \
+        {                                                                      \
+            KEY_LEFT_CONTROL,  NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,         \
+            KEY_RIGHT_CONTROL,                                                 \
+        },                                                                     \
+        {                                                                      \
+            KEY_LEFT_SHIFT,  NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,           \
+            KEY_RIGHT_SHIFT,                                                   \
+        },                                                                     \
+        {                                                                      \
+            NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, KEY_LEFT_ALT, NA,          \
+        },                                                                     \
+  }
+
+#define SPECIAL_KEY_ARRAY                                                      \
+  {                                                                            \
+    {                                                                          \
+        KEY_TAB, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,                   \
+    },                                                                         \
+        {                                                                      \
+            NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,                    \
+        },                                                                     \
+        {                                                                      \
+            NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,                    \
+        },                                                                     \
+        {                                                                      \
+            NA,                                                                \
+            NA,                                                                \
+            NA,                                                                \
+            NA,                                                                \
+            KEY_BACKSPACE,                                                     \
+            KEY_RETURN,                                                        \
+            KEY_SPACE,                                                         \
+            KEY_BACKSPACE,                                                     \
+            NA,                                                                \
+            NA,                                                                \
+            NA,                                                                \
+            KEY_ESC,                                                           \
+        },                                                                     \
+  }
+
+#define MOUSE_KEY_ARRAY                                                        \
+  {                                                                            \
+    {                                                                          \
+        NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,                        \
+    },                                                                         \
+        {                                                                      \
+            NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,                    \
+        },                                                                     \
+        {                                                                      \
+            NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,                    \
+        },                                                                     \
+        {                                                                      \
+            MOUSE_LEFT,                                                        \
+            MOUSE_DOWN,                                                        \
+            MOUSE_UP,                                                          \
+            MOUSE_RIGHT,                                                       \
+            NA,                                                                \
+            NA,                                                                \
+            NA,                                                                \
+            NA,                                                                \
+            MOUSE_LEFT_BUTTON,                                                 \
+            MOUSE_RIGHT_BUTTON,                                                \
+            NA,                                                                \
+            NA,                                                                \
+        },                                                                     \
   }
